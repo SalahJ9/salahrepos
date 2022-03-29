@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <?php
+            //Define variables
+            $credits = 18;
+            $name = "Muhammad Janjuah";
+
+            //Uses vardump to display name
+            var_dump($name);
+            echo "<br>";
+
+            //Uses vardump to display credits
+            var_dump($credits);
+            echo "<br>";
+
+            //Welcome message
+            echo "This is your page ".$name." <br>";
+
+            //If statement to determine student status
+            if($credits>11)
+                echo "FULL TIME STUDENT";
+            else
+                echo "PART TIME STUDENT";
+
+            //Displays additional info about file,browser, etc
+            echo "<br>";
+            echo $_SERVER['PHP_SELF'];
+            echo "<br>";
+            echo $_SERVER['SERVER_NAME'];
+            echo "<br>";
+            echo $_SERVER['HTTP_HOST'];
+            echo "<br>";
+            echo $_SERVER['HTTP_REFERER'];
+            echo "<br>";
+            echo $_SERVER['HTTP_USER_AGENT'];
+            echo "<br>";
+            echo $_SERVER['SCRIPT_NAME'];
+            echo "<br>";
+        ?>
+    </body>
+</html>
